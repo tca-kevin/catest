@@ -1,0 +1,20 @@
+[28-Nov-2024 11:38:20 UTC] PHP Warning:  require(/var/www/exp/catest/wp-content/themes/thecareeracademy/inc/custom-header.php): Failed to open stream: No such file or directory in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php on line 155
+[28-Nov-2024 11:38:20 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/var/www/exp/catest/wp-content/themes/thecareeracademy/inc/custom-header.php' (include_path='.:/usr/local/lib/php') in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php:155
+Stack trace:
+#0 /var/www/exp/catest/wp-settings.php(672): include()
+#1 /var/www/exp/catest/wp-config.php(104): require_once('/var/www/exp/ca...')
+#2 /var/www/exp/catest/wp-load.php(50): require_once('/var/www/exp/ca...')
+#3 /var/www/exp/catest/wp-blog-header.php(13): require_once('/var/www/exp/ca...')
+#4 /var/www/exp/catest/index.php(17): require('/var/www/exp/ca...')
+#5 {main}
+  thrown in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php on line 155
+[28-Nov-2024 11:38:20 UTC] PHP Warning:  require(/var/www/exp/catest/wp-content/themes/thecareeracademy/inc/custom-header.php): Failed to open stream: No such file or directory in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php on line 155
+[28-Nov-2024 11:38:20 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/var/www/exp/catest/wp-content/themes/thecareeracademy/inc/custom-header.php' (include_path='.:/usr/local/lib/php') in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php:155
+Stack trace:
+#0 /var/www/exp/catest/wp-settings.php(672): include()
+#1 /var/www/exp/catest/wp-config.php(104): require_once('/var/www/exp/ca...')
+#2 /var/www/exp/catest/wp-load.php(50): require_once('/var/www/exp/ca...')
+#3 /var/www/exp/catest/wp-blog-header.php(13): require_once('/var/www/exp/ca...')
+#4 /var/www/exp/catest/index.php(17): require('/var/www/exp/ca...')
+#5 {main}
+  thrown in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php on line 155
