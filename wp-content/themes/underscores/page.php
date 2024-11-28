@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package The_Career_Academy
+ * @package Underscores
  */
 
 get_header();

@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package The_Career_Academy
+ * @package Underscores
  */
 
 /**
@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function thecareeracademy_jetpack_setup() {
+function underscores_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'thecareeracademy_infinite_scroll_render',
+			'render'    => 'underscores_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function thecareeracademy_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'thecareeracademy-style',
+				'stylesheet' => 'underscores-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
@@ -48,13 +48,13 @@ function thecareeracademy_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'thecareeracademy_jetpack_setup' );
+add_action( 'after_setup_theme', 'underscores_jetpack_setup' );
 
-if ( ! function_exists( 'thecareeracademy_infinite_scroll_render' ) ) :
+if ( ! function_exists( 'underscores_infinite_scroll_render' ) ) :
 	/**
 	 * Custom render function for Infinite Scroll.
 	 */
-	function thecareeracademy_infinite_scroll_render() {
+	function underscores_infinite_scroll_render() {
 		while ( have_posts() ) {
 			the_post();
 			if ( is_search() ) :

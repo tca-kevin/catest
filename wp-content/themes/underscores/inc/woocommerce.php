@@ -4,7 +4,7 @@
  *
  * @link https://woocommerce.com/
  *
- * @package The_Career_Academy
+ * @package Underscores
  */
 
 /**
@@ -16,7 +16,7 @@
  *
  * @return void
  */
-function thecareeracademy_woocommerce_setup() {
+function underscores_woocommerce_setup() {
 	add_theme_support(
 		'woocommerce',
 		array(
@@ -35,15 +35,15 @@ function thecareeracademy_woocommerce_setup() {
 	add_theme_support( 'wc-product-gallery-lightbox' );
 	add_theme_support( 'wc-product-gallery-slider' );
 }
-add_action( 'after_setup_theme', 'thecareeracademy_woocommerce_setup' );
+add_action( 'after_setup_theme', 'underscores_woocommerce_setup' );
 
 /**
  * WooCommerce specific scripts & stylesheets.
  *
  * @return void
  */
-function thecareeracademy_woocommerce_scripts() {
-	wp_enqueue_style( 'thecareeracademy-woocommerce-style', get_template_directory_uri() . '/woocommerce.css', array(), _S_VERSION );
+function underscores_woocommerce_scripts() {
+	wp_enqueue_style( 'underscores-woocommerce-style', get_template_directory_uri() . '/woocommerce.css', array(), _S_VERSION );
 
 	$font_path   = WC()->plugin_url() . '/assets/fonts/';
 	$inline_font = '@font-face {
@@ -57,9 +57,9 @@ function thecareeracademy_woocommerce_scripts() {
 			font-style: normal;
 		}';
 
-	wp_add_inline_style( 'thecareeracademy-woocommerce-style', $inline_font );
+	wp_add_inline_style( 'underscores-woocommerce-style', $inline_font );
 }
-add_action( 'wp_enqueue_scripts', 'thecareeracademy_woocommerce_scripts' );
+add_action( 'wp_enqueue_scripts', 'underscores_woocommerce_scripts' );
 
 /**
  * Disable the default WooCommerce stylesheet.
@@ -77,12 +77,12 @@ add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
  * @param  array $classes CSS classes applied to the body tag.
  * @return array $classes modified to include 'woocommerce-active' class.
  */
-function thecareeracademy_woocommerce_active_body_class( $classes ) {
+function underscores_woocommerce_active_body_class( $classes ) {
 	$classes[] = 'woocommerce-active';
 
 	return $classes;
 }
-add_filter( 'body_class', 'thecareeracademy_woocommerce_active_body_class' );
+add_filter( 'body_class', 'underscores_woocommerce_active_body_class' );
 
 /**
  * Related Products Args.
@@ -90,7 +90,7 @@ add_filter( 'body_class', 'thecareeracademy_woocommerce_active_body_class' );
  * @param array $args related products args.
  * @return array $args related products args.
  */
-function thecareeracademy_woocommerce_related_products_args( $args ) {
+function underscores_woocommerce_related_products_args( $args ) {
 	$defaults = array(
 		'posts_per_page' => 3,
 		'columns'        => 3,
@@ -100,7 +100,7 @@ function thecareeracademy_woocommerce_related_products_args( $args ) {
 
 	return $args;
 }
-add_filter( 'woocommerce_output_related_products_args', 'thecareeracademy_woocommerce_related_products_args' );
+add_filter( 'woocommerce_output_related_products_args', 'underscores_woocommerce_related_products_args' );
 
 /**
  * Remove default WooCommerce wrapper.
@@ -108,7 +108,7 @@ add_filter( 'woocommerce_output_related_products_args', 'thecareeracademy_woocom
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
 
-if ( ! function_exists( 'thecareeracademy_woocommerce_wrapper_before' ) ) {
+if ( ! function_exists( 'underscores_woocommerce_wrapper_before' ) ) {
 	/**
 	 * Before Content.
 	 *
@@ -116,15 +116,15 @@ if ( ! function_exists( 'thecareeracademy_woocommerce_wrapper_before' ) ) {
 	 *
 	 * @return void
 	 */
-	function thecareeracademy_woocommerce_wrapper_before() {
+	function underscores_woocommerce_wrapper_before() {
 		?>
 			<main id="primary" class="site-main">
 		<?php
 	}
 }
-add_action( 'woocommerce_before_main_content', 'thecareeracademy_woocommerce_wrapper_before' );
+add_action( 'woocommerce_before_main_content', 'underscores_woocommerce_wrapper_before' );
 
-if ( ! function_exists( 'thecareeracademy_woocommerce_wrapper_after' ) ) {
+if ( ! function_exists( 'underscores_woocommerce_wrapper_after' ) ) {
 	/**
 	 * After Content.
 	 *
@@ -132,13 +132,13 @@ if ( ! function_exists( 'thecareeracademy_woocommerce_wrapper_after' ) ) {
 	 *
 	 * @return void
 	 */
-	function thecareeracademy_woocommerce_wrapper_after() {
+	function underscores_woocommerce_wrapper_after() {
 		?>
 			</main><!-- #main -->
 		<?php
 	}
 }
-add_action( 'woocommerce_after_main_content', 'thecareeracademy_woocommerce_wrapper_after' );
+add_action( 'woocommerce_after_main_content', 'underscores_woocommerce_wrapper_after' );
 
 /**
  * Sample implementation of the WooCommerce Mini Cart.
@@ -146,13 +146,13 @@ add_action( 'woocommerce_after_main_content', 'thecareeracademy_woocommerce_wrap
  * You can add the WooCommerce Mini Cart to header.php like so ...
  *
 	<?php
-		if ( function_exists( 'thecareeracademy_woocommerce_header_cart' ) ) {
-			thecareeracademy_woocommerce_header_cart();
+		if ( function_exists( 'underscores_woocommerce_header_cart' ) ) {
+			underscores_woocommerce_header_cart();
 		}
 	?>
  */
 
-if ( ! function_exists( 'thecareeracademy_woocommerce_cart_link_fragment' ) ) {
+if ( ! function_exists( 'underscores_woocommerce_cart_link_fragment' ) ) {
 	/**
 	 * Cart Fragments.
 	 *
@@ -161,17 +161,17 @@ if ( ! function_exists( 'thecareeracademy_woocommerce_cart_link_fragment' ) ) {
 	 * @param array $fragments Fragments to refresh via AJAX.
 	 * @return array Fragments to refresh via AJAX.
 	 */
-	function thecareeracademy_woocommerce_cart_link_fragment( $fragments ) {
+	function underscores_woocommerce_cart_link_fragment( $fragments ) {
 		ob_start();
-		thecareeracademy_woocommerce_cart_link();
+		underscores_woocommerce_cart_link();
 		$fragments['a.cart-contents'] = ob_get_clean();
 
 		return $fragments;
 	}
 }
-add_filter( 'woocommerce_add_to_cart_fragments', 'thecareeracademy_woocommerce_cart_link_fragment' );
+add_filter( 'woocommerce_add_to_cart_fragments', 'underscores_woocommerce_cart_link_fragment' );
 
-if ( ! function_exists( 'thecareeracademy_woocommerce_cart_link' ) ) {
+if ( ! function_exists( 'underscores_woocommerce_cart_link' ) ) {
 	/**
 	 * Cart Link.
 	 *
@@ -179,13 +179,13 @@ if ( ! function_exists( 'thecareeracademy_woocommerce_cart_link' ) ) {
 	 *
 	 * @return void
 	 */
-	function thecareeracademy_woocommerce_cart_link() {
+	function underscores_woocommerce_cart_link() {
 		?>
-		<a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'thecareeracademy' ); ?>">
+		<a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'underscores' ); ?>">
 			<?php
 			$item_count_text = sprintf(
 				/* translators: number of items in the mini cart. */
-				_n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'thecareeracademy' ),
+				_n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'underscores' ),
 				WC()->cart->get_cart_contents_count()
 			);
 			?>
@@ -195,13 +195,13 @@ if ( ! function_exists( 'thecareeracademy_woocommerce_cart_link' ) ) {
 	}
 }
 
-if ( ! function_exists( 'thecareeracademy_woocommerce_header_cart' ) ) {
+if ( ! function_exists( 'underscores_woocommerce_header_cart' ) ) {
 	/**
 	 * Display Header Cart.
 	 *
 	 * @return void
 	 */
-	function thecareeracademy_woocommerce_header_cart() {
+	function underscores_woocommerce_header_cart() {
 		if ( is_cart() ) {
 			$class = 'current-menu-item';
 		} else {
@@ -210,7 +210,7 @@ if ( ! function_exists( 'thecareeracademy_woocommerce_header_cart' ) ) {
 		?>
 		<ul id="site-header-cart" class="site-header-cart">
 			<li class="<?php echo esc_attr( $class ); ?>">
-				<?php thecareeracademy_woocommerce_cart_link(); ?>
+				<?php underscores_woocommerce_cart_link(); ?>
 			</li>
 			<li>
 				<?php

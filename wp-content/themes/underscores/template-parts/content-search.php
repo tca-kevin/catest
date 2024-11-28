@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package The_Career_Academy
+ * @package Underscores
  */
 
 ?>
@@ -16,20 +16,20 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php
-			thecareeracademy_posted_on();
-			thecareeracademy_posted_by();
+			underscores_posted_on();
+			underscores_posted_by();
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php thecareeracademy_post_thumbnail(); ?>
+	<?php underscores_post_thumbnail(); ?>
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php thecareeracademy_entry_footer(); ?>
+		<?php underscores_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -1,4 +1,4 @@
-=== The Career Academy ===
+=== Underscores ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -10,11 +10,11 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called The Career Academy.
+A starter theme called Underscores.
 
 == Description ==
 
-The Career Academy 2025 Theme
+Description
 
 == Installation ==
 
@@ -26,7 +26,7 @@ The Career Academy 2025 Theme
 
 = Does this theme support any plugins? =
 
-The Career Academy includes support for WooCommerce and for Infinite Scroll in Jetpack.
+Underscores includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
