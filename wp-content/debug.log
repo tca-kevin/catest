@@ -18,3 +18,256 @@ Stack trace:
 #4 /var/www/exp/catest/index.php(17): require('/var/www/exp/ca...')
 #5 {main}
   thrown in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php on line 155
+[28-Nov-2024 21:30:09 UTC] PHP Deprecated:  File Theme without sidebar.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a sidebar.php template in your theme. in /var/www/exp/catest/wp-includes/functions.php on line 6114
+[28-Nov-2024 21:30:26 UTC] PHP Deprecated:  File Theme without sidebar.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a sidebar.php template in your theme. in /var/www/exp/catest/wp-includes/functions.php on line 6114
+[28-Nov-2024 21:30:42 UTC] PHP Deprecated:  File Theme without sidebar.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a sidebar.php template in your theme. in /var/www/exp/catest/wp-includes/functions.php on line 6114
+[28-Nov-2024 21:30:44 UTC] PHP Deprecated:  File Theme without sidebar.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a sidebar.php template in your theme. in /var/www/exp/catest/wp-includes/functions.php on line 6114
+[28-Nov-2024 21:31:16 UTC] PHP Deprecated:  File Theme without sidebar.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a sidebar.php template in your theme. in /var/www/exp/catest/wp-includes/functions.php on line 6114
+[28-Nov-2024 21:31:16 UTC] PHP Deprecated:  File Theme without sidebar.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a sidebar.php template in your theme. in /var/www/exp/catest/wp-includes/functions.php on line 6114
+[28-Nov-2024 21:31:33 UTC] PHP Deprecated:  File Theme without sidebar.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a sidebar.php template in your theme. in /var/www/exp/catest/wp-includes/functions.php on line 6114
+[28-Nov-2024 21:31:36 UTC] PHP Deprecated:  File Theme without sidebar.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a sidebar.php template in your theme. in /var/www/exp/catest/wp-includes/functions.php on line 6114
+[28-Nov-2024 21:32:02 UTC] PHP Deprecated:  File Theme without sidebar.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a sidebar.php template in your theme. in /var/www/exp/catest/wp-includes/functions.php on line 6114
+[28-Nov-2024 21:40:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function underscores_post_thumbnail() in /var/www/exp/catest/wp-content/themes/thecareeracademy/template-parts/content.php:32
+Stack trace:
+#0 /var/www/exp/catest/wp-includes/template.php(812): require()
+#1 /var/www/exp/catest/wp-includes/template.php(745): load_template('/var/www/exp/ca...', false, Array)
+#2 /var/www/exp/catest/wp-includes/general-template.php(206): locate_template(Array, true, false, Array)
+#3 /var/www/exp/catest/wp-content/themes/thecareeracademy/page.php(10): get_template_part('template-parts/...', 'page')
+#4 /var/www/exp/catest/wp-includes/template-loader.php(106): include('/var/www/exp/ca...')
+#5 /var/www/exp/catest/wp-blog-header.php(19): require_once('/var/www/exp/ca...')
+#6 /var/www/exp/catest/index.php(17): require('/var/www/exp/ca...')
+#7 {main}
+  thrown in /var/www/exp/catest/wp-content/themes/thecareeracademy/template-parts/content.php on line 32
+[28-Nov-2024 21:40:50 UTC] PHP Deprecated:  Creation of dynamic property ftp::$features is deprecated in /var/www/exp/catest/wp-admin/includes/class-ftp.php on line 151
+[28-Nov-2024 21:40:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function underscores_post_thumbnail() in /var/www/exp/catest/wp-content/themes/thecareeracademy/template-parts/content.php:32
+Stack trace:
+#0 /var/www/exp/catest/wp-includes/template.php(812): require()
+#1 /var/www/exp/catest/wp-includes/template.php(745): load_template('/var/www/exp/ca...', false, Array)
+#2 /var/www/exp/catest/wp-includes/general-template.php(206): locate_template(Array, true, false, Array)
+#3 /var/www/exp/catest/wp-content/themes/thecareeracademy/page.php(10): get_template_part('template-parts/...', 'page')
+#4 /var/www/exp/catest/wp-includes/template-loader.php(106): include('/var/www/exp/ca...')
+#5 /var/www/exp/catest/wp-blog-header.php(19): require_once('/var/www/exp/ca...')
+#6 /var/www/exp/catest/index.php(17): require('/var/www/exp/ca...')
+#7 {main}
+  thrown in /var/www/exp/catest/wp-content/themes/thecareeracademy/template-parts/content.php on line 32
+[28-Nov-2024 21:40:50 UTC] PHP Deprecated:  Creation of dynamic property ftp::$features is deprecated in /var/www/exp/catest/wp-admin/includes/class-ftp.php on line 151
+[28-Nov-2024 21:42:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function underscores_entry_footer() in /var/www/exp/catest/wp-content/themes/thecareeracademy/template-parts/content.php:42
+Stack trace:
+#0 /var/www/exp/catest/wp-includes/template.php(812): require()
+#1 /var/www/exp/catest/wp-includes/template.php(745): load_template('/var/www/exp/ca...', false, Array)
+#2 /var/www/exp/catest/wp-includes/general-template.php(206): locate_template(Array, true, false, Array)
+#3 /var/www/exp/catest/wp-content/themes/thecareeracademy/page.php(10): get_template_part('template-parts/...', 'page')
+#4 /var/www/exp/catest/wp-includes/template-loader.php(106): include('/var/www/exp/ca...')
+#5 /var/www/exp/catest/wp-blog-header.php(19): require_once('/var/www/exp/ca...')
+#6 /var/www/exp/catest/index.php(17): require('/var/www/exp/ca...')
+#7 {main}
+  thrown in /var/www/exp/catest/wp-content/themes/thecareeracademy/template-parts/content.php on line 42
+[28-Nov-2024 21:42:23 UTC] PHP Deprecated:  Creation of dynamic property ftp::$features is deprecated in /var/www/exp/catest/wp-admin/includes/class-ftp.php on line 151
+[28-Nov-2024 21:42:29 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in /var/www/exp/catest/wp-includes/functions.php on line 6114
+[28-Nov-2024 21:42:29 UTC] PHP Deprecated:  File Theme without sidebar.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a sidebar.php template in your theme. in /var/www/exp/catest/wp-includes/functions.php on line 6114
+[28-Nov-2024 21:42:50 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in /var/www/exp/catest/wp-includes/functions.php on line 6114
+[28-Nov-2024 21:42:50 UTC] PHP Deprecated:  File Theme without sidebar.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a sidebar.php template in your theme. in /var/www/exp/catest/wp-includes/functions.php on line 6114
+[28-Nov-2024 21:48:55 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /var/www/exp/catest/wp-content/themes/thecareeracademy/template-parts/content.php on line 23
+[28-Nov-2024 21:48:55 UTC] PHP Deprecated:  Creation of dynamic property ftp::$features is deprecated in /var/www/exp/catest/wp-admin/includes/class-ftp.php on line 151
+[28-Nov-2024 21:48:56 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /var/www/exp/catest/wp-content/themes/thecareeracademy/template-parts/content.php on line 23
+[28-Nov-2024 21:48:56 UTC] PHP Deprecated:  Creation of dynamic property ftp::$features is deprecated in /var/www/exp/catest/wp-admin/includes/class-ftp.php on line 151
+[28-Nov-2024 21:48:56 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /var/www/exp/catest/wp-content/themes/thecareeracademy/template-parts/content.php on line 23
+[28-Nov-2024 21:48:56 UTC] PHP Deprecated:  Creation of dynamic property ftp::$features is deprecated in /var/www/exp/catest/wp-admin/includes/class-ftp.php on line 151
+[28-Nov-2024 21:51:45 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting "(" in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php on line 3
+[28-Nov-2024 21:51:45 UTC] PHP Deprecated:  Creation of dynamic property ftp::$features is deprecated in /var/www/exp/catest/wp-admin/includes/class-ftp.php on line 151
+[28-Nov-2024 23:03:06 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_type_attribute_to_module_script(), 1 passed in /var/www/exp/catest/wp-includes/class-wp-hook.php on line 326 and exactly 3 expected in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php:55
+Stack trace:
+#0 /var/www/exp/catest/wp-includes/class-wp-hook.php(326): add_type_attribute_to_module_script('<script type="t...')
+#1 /var/www/exp/catest/wp-includes/plugin.php(205): WP_Hook->apply_filters('<script type="t...', Array)
+#2 /var/www/exp/catest/wp-includes/class-wp-scripts.php(441): apply_filters('script_loader_t...', '<script type="t...', 'jquery-core', 'https://catest....')
+#3 /var/www/exp/catest/wp-includes/class-wp-dependencies.php(137): WP_Scripts->do_item('jquery-core', 0)
+#4 /var/www/exp/catest/wp-includes/class-wp-scripts.php(750): WP_Dependencies->do_items(Array, 0)
+#5 /var/www/exp/catest/wp-includes/script-loader.php(2111): WP_Scripts->do_head_items()
+#6 /var/www/exp/catest/wp-includes/script-loader.php(2231): print_head_scripts()
+#7 /var/www/exp/catest/wp-includes/class-wp-hook.php(324): wp_print_head_scripts('')
+#8 /var/www/exp/catest/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(Array, Array)
+#9 /var/www/exp/catest/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#10 /var/www/exp/catest/wp-includes/general-template.php(3064): do_action('wp_head')
+#11 /var/www/exp/catest/wp-content/themes/thecareeracademy/header.php(8): wp_head()
+#12 /var/www/exp/catest/wp-includes/template.php(810): require_once('/var/www/exp/ca...')
+#13 /var/www/exp/catest/wp-includes/template.php(745): load_template('/var/www/exp/ca...', true, Array)
+#14 /var/www/exp/catest/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#15 /var/www/exp/catest/wp-content/themes/thecareeracademy/page.php(2): get_header()
+#16 /var/www/exp/catest/wp-includes/template-loader.php(106): include('/var/www/exp/ca...')
+#17 /var/www/exp/catest/wp-blog-header.php(19): require_once('/var/www/exp/ca...')
+#18 /var/www/exp/catest/index.php(17): require('/var/www/exp/ca...')
+#19 {main}
+  thrown in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php on line 55
+[28-Nov-2024 23:03:06 UTC] PHP Deprecated:  Creation of dynamic property ftp::$features is deprecated in /var/www/exp/catest/wp-admin/includes/class-ftp.php on line 151
+[28-Nov-2024 23:03:07 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_type_attribute_to_module_script(), 1 passed in /var/www/exp/catest/wp-includes/class-wp-hook.php on line 326 and exactly 3 expected in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php:55
+Stack trace:
+#0 /var/www/exp/catest/wp-includes/class-wp-hook.php(326): add_type_attribute_to_module_script('<script type="t...')
+#1 /var/www/exp/catest/wp-includes/plugin.php(205): WP_Hook->apply_filters('<script type="t...', Array)
+#2 /var/www/exp/catest/wp-includes/class-wp-scripts.php(441): apply_filters('script_loader_t...', '<script type="t...', 'jquery-core', 'https://catest....')
+#3 /var/www/exp/catest/wp-includes/class-wp-dependencies.php(137): WP_Scripts->do_item('jquery-core', 0)
+#4 /var/www/exp/catest/wp-includes/class-wp-scripts.php(750): WP_Dependencies->do_items(Array, 0)
+#5 /var/www/exp/catest/wp-includes/script-loader.php(2111): WP_Scripts->do_head_items()
+#6 /var/www/exp/catest/wp-includes/script-loader.php(2231): print_head_scripts()
+#7 /var/www/exp/catest/wp-includes/class-wp-hook.php(324): wp_print_head_scripts('')
+#8 /var/www/exp/catest/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(Array, Array)
+#9 /var/www/exp/catest/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#10 /var/www/exp/catest/wp-includes/general-template.php(3064): do_action('wp_head')
+#11 /var/www/exp/catest/wp-content/themes/thecareeracademy/header.php(8): wp_head()
+#12 /var/www/exp/catest/wp-includes/template.php(810): require_once('/var/www/exp/ca...')
+#13 /var/www/exp/catest/wp-includes/template.php(745): load_template('/var/www/exp/ca...', true, Array)
+#14 /var/www/exp/catest/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#15 /var/www/exp/catest/wp-content/themes/thecareeracademy/page.php(2): get_header()
+#16 /var/www/exp/catest/wp-includes/template-loader.php(106): include('/var/www/exp/ca...')
+#17 /var/www/exp/catest/wp-blog-header.php(19): require_once('/var/www/exp/ca...')
+#18 /var/www/exp/catest/index.php(17): require('/var/www/exp/ca...')
+#19 {main}
+  thrown in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php on line 55
+[28-Nov-2024 23:03:07 UTC] PHP Deprecated:  Creation of dynamic property ftp::$features is deprecated in /var/www/exp/catest/wp-admin/includes/class-ftp.php on line 151
+[28-Nov-2024 23:03:09 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_type_attribute_to_module_script(), 1 passed in /var/www/exp/catest/wp-includes/class-wp-hook.php on line 326 and exactly 3 expected in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php:55
+Stack trace:
+#0 /var/www/exp/catest/wp-includes/class-wp-hook.php(326): add_type_attribute_to_module_script('<script type="t...')
+#1 /var/www/exp/catest/wp-includes/plugin.php(205): WP_Hook->apply_filters('<script type="t...', Array)
+#2 /var/www/exp/catest/wp-includes/class-wp-scripts.php(441): apply_filters('script_loader_t...', '<script type="t...', 'jquery-core', 'https://catest....')
+#3 /var/www/exp/catest/wp-includes/class-wp-dependencies.php(137): WP_Scripts->do_item('jquery-core', 0)
+#4 /var/www/exp/catest/wp-includes/class-wp-scripts.php(750): WP_Dependencies->do_items(Array, 0)
+#5 /var/www/exp/catest/wp-includes/script-loader.php(2111): WP_Scripts->do_head_items()
+#6 /var/www/exp/catest/wp-includes/script-loader.php(2231): print_head_scripts()
+#7 /var/www/exp/catest/wp-includes/class-wp-hook.php(324): wp_print_head_scripts('')
+#8 /var/www/exp/catest/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(Array, Array)
+#9 /var/www/exp/catest/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#10 /var/www/exp/catest/wp-includes/general-template.php(3064): do_action('wp_head')
+#11 /var/www/exp/catest/wp-content/themes/thecareeracademy/header.php(8): wp_head()
+#12 /var/www/exp/catest/wp-includes/template.php(810): require_once('/var/www/exp/ca...')
+#13 /var/www/exp/catest/wp-includes/template.php(745): load_template('/var/www/exp/ca...', true, Array)
+#14 /var/www/exp/catest/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#15 /var/www/exp/catest/wp-content/themes/thecareeracademy/page.php(2): get_header()
+#16 /var/www/exp/catest/wp-includes/template-loader.php(106): include('/var/www/exp/ca...')
+#17 /var/www/exp/catest/wp-blog-header.php(19): require_once('/var/www/exp/ca...')
+#18 /var/www/exp/catest/index.php(17): require('/var/www/exp/ca...')
+#19 {main}
+  thrown in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php on line 55
+[28-Nov-2024 23:03:09 UTC] PHP Deprecated:  Creation of dynamic property ftp::$features is deprecated in /var/www/exp/catest/wp-admin/includes/class-ftp.php on line 151
+[28-Nov-2024 23:03:11 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_type_attribute_to_module_script(), 1 passed in /var/www/exp/catest/wp-includes/class-wp-hook.php on line 326 and exactly 3 expected in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php:54
+Stack trace:
+#0 /var/www/exp/catest/wp-includes/class-wp-hook.php(326): add_type_attribute_to_module_script('<script type="t...')
+#1 /var/www/exp/catest/wp-includes/plugin.php(205): WP_Hook->apply_filters('<script type="t...', Array)
+#2 /var/www/exp/catest/wp-includes/class-wp-scripts.php(441): apply_filters('script_loader_t...', '<script type="t...', 'jquery-core', 'https://catest....')
+#3 /var/www/exp/catest/wp-includes/class-wp-dependencies.php(137): WP_Scripts->do_item('jquery-core', 0)
+#4 /var/www/exp/catest/wp-includes/class-wp-scripts.php(750): WP_Dependencies->do_items(Array, 0)
+#5 /var/www/exp/catest/wp-includes/script-loader.php(2111): WP_Scripts->do_head_items()
+#6 /var/www/exp/catest/wp-includes/script-loader.php(2231): print_head_scripts()
+#7 /var/www/exp/catest/wp-includes/class-wp-hook.php(324): wp_print_head_scripts('')
+#8 /var/www/exp/catest/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(Array, Array)
+#9 /var/www/exp/catest/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#10 /var/www/exp/catest/wp-includes/general-template.php(3064): do_action('wp_head')
+#11 /var/www/exp/catest/wp-content/themes/thecareeracademy/header.php(8): wp_head()
+#12 /var/www/exp/catest/wp-includes/template.php(810): require_once('/var/www/exp/ca...')
+#13 /var/www/exp/catest/wp-includes/template.php(745): load_template('/var/www/exp/ca...', true, Array)
+#14 /var/www/exp/catest/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#15 /var/www/exp/catest/wp-content/themes/thecareeracademy/page.php(2): get_header()
+#16 /var/www/exp/catest/wp-includes/template-loader.php(106): include('/var/www/exp/ca...')
+#17 /var/www/exp/catest/wp-blog-header.php(19): require_once('/var/www/exp/ca...')
+#18 /var/www/exp/catest/index.php(17): require('/var/www/exp/ca...')
+#19 {main}
+  thrown in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php on line 54
+[28-Nov-2024 23:03:11 UTC] PHP Deprecated:  Creation of dynamic property ftp::$features is deprecated in /var/www/exp/catest/wp-admin/includes/class-ftp.php on line 151
+[28-Nov-2024 23:03:13 UTC] PHP Parse error:  syntax error, unexpected token "/", expecting end of file in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php on line 54
+[28-Nov-2024 23:03:13 UTC] PHP Deprecated:  Creation of dynamic property ftp::$features is deprecated in /var/www/exp/catest/wp-admin/includes/class-ftp.php on line 151
+[28-Nov-2024 23:03:13 UTC] PHP Parse error:  syntax error, unexpected token "/", expecting end of file in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php on line 54
+[28-Nov-2024 23:03:13 UTC] PHP Deprecated:  Creation of dynamic property ftp::$features is deprecated in /var/www/exp/catest/wp-admin/includes/class-ftp.php on line 151
+[28-Nov-2024 23:03:34 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_type_attribute_to_module_script(), 1 passed in /var/www/exp/catest/wp-includes/class-wp-hook.php on line 326 and exactly 3 expected in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php:62
+Stack trace:
+#0 /var/www/exp/catest/wp-includes/class-wp-hook.php(326): add_type_attribute_to_module_script('<script type="t...')
+#1 /var/www/exp/catest/wp-includes/plugin.php(205): WP_Hook->apply_filters('<script type="t...', Array)
+#2 /var/www/exp/catest/wp-includes/class-wp-scripts.php(441): apply_filters('script_loader_t...', '<script type="t...', 'jquery-core', 'https://catest....')
+#3 /var/www/exp/catest/wp-includes/class-wp-dependencies.php(137): WP_Scripts->do_item('jquery-core', 0)
+#4 /var/www/exp/catest/wp-includes/class-wp-scripts.php(750): WP_Dependencies->do_items(Array, 0)
+#5 /var/www/exp/catest/wp-includes/script-loader.php(2111): WP_Scripts->do_head_items()
+#6 /var/www/exp/catest/wp-includes/script-loader.php(2231): print_head_scripts()
+#7 /var/www/exp/catest/wp-includes/class-wp-hook.php(324): wp_print_head_scripts('')
+#8 /var/www/exp/catest/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(Array, Array)
+#9 /var/www/exp/catest/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#10 /var/www/exp/catest/wp-includes/general-template.php(3064): do_action('wp_head')
+#11 /var/www/exp/catest/wp-content/themes/thecareeracademy/header.php(8): wp_head()
+#12 /var/www/exp/catest/wp-includes/template.php(810): require_once('/var/www/exp/ca...')
+#13 /var/www/exp/catest/wp-includes/template.php(745): load_template('/var/www/exp/ca...', true, Array)
+#14 /var/www/exp/catest/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#15 /var/www/exp/catest/wp-content/themes/thecareeracademy/page.php(2): get_header()
+#16 /var/www/exp/catest/wp-includes/template-loader.php(106): include('/var/www/exp/ca...')
+#17 /var/www/exp/catest/wp-blog-header.php(19): require_once('/var/www/exp/ca...')
+#18 /var/www/exp/catest/index.php(17): require('/var/www/exp/ca...')
+#19 {main}
+  thrown in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php on line 62
+[28-Nov-2024 23:03:34 UTC] PHP Deprecated:  Creation of dynamic property ftp::$features is deprecated in /var/www/exp/catest/wp-admin/includes/class-ftp.php on line 151
+[28-Nov-2024 23:03:35 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_type_attribute_to_module_script(), 1 passed in /var/www/exp/catest/wp-includes/class-wp-hook.php on line 326 and exactly 3 expected in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php:62
+Stack trace:
+#0 /var/www/exp/catest/wp-includes/class-wp-hook.php(326): add_type_attribute_to_module_script('<script type="t...')
+#1 /var/www/exp/catest/wp-includes/plugin.php(205): WP_Hook->apply_filters('<script type="t...', Array)
+#2 /var/www/exp/catest/wp-includes/class-wp-scripts.php(441): apply_filters('script_loader_t...', '<script type="t...', 'jquery-core', 'https://catest....')
+#3 /var/www/exp/catest/wp-includes/class-wp-dependencies.php(137): WP_Scripts->do_item('jquery-core', 0)
+#4 /var/www/exp/catest/wp-includes/class-wp-scripts.php(750): WP_Dependencies->do_items(Array, 0)
+#5 /var/www/exp/catest/wp-includes/script-loader.php(2111): WP_Scripts->do_head_items()
+#6 /var/www/exp/catest/wp-includes/script-loader.php(2231): print_head_scripts()
+#7 /var/www/exp/catest/wp-includes/class-wp-hook.php(324): wp_print_head_scripts('')
+#8 /var/www/exp/catest/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(Array, Array)
+#9 /var/www/exp/catest/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#10 /var/www/exp/catest/wp-includes/general-template.php(3064): do_action('wp_head')
+#11 /var/www/exp/catest/wp-content/themes/thecareeracademy/header.php(8): wp_head()
+#12 /var/www/exp/catest/wp-includes/template.php(810): require_once('/var/www/exp/ca...')
+#13 /var/www/exp/catest/wp-includes/template.php(745): load_template('/var/www/exp/ca...', true, Array)
+#14 /var/www/exp/catest/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#15 /var/www/exp/catest/wp-content/themes/thecareeracademy/page.php(2): get_header()
+#16 /var/www/exp/catest/wp-includes/template-loader.php(106): include('/var/www/exp/ca...')
+#17 /var/www/exp/catest/wp-blog-header.php(19): require_once('/var/www/exp/ca...')
+#18 /var/www/exp/catest/index.php(17): require('/var/www/exp/ca...')
+#19 {main}
+  thrown in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php on line 62
+[28-Nov-2024 23:03:35 UTC] PHP Deprecated:  Creation of dynamic property ftp::$features is deprecated in /var/www/exp/catest/wp-admin/includes/class-ftp.php on line 151
+[28-Nov-2024 23:04:24 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_type_attribute_to_module_script(), 1 passed in /var/www/exp/catest/wp-includes/class-wp-hook.php on line 326 and exactly 3 expected in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php:62
+Stack trace:
+#0 /var/www/exp/catest/wp-includes/class-wp-hook.php(326): add_type_attribute_to_module_script('<script type="t...')
+#1 /var/www/exp/catest/wp-includes/plugin.php(205): WP_Hook->apply_filters('<script type="t...', Array)
+#2 /var/www/exp/catest/wp-includes/class-wp-scripts.php(441): apply_filters('script_loader_t...', '<script type="t...', 'jquery-core', 'https://catest....')
+#3 /var/www/exp/catest/wp-includes/class-wp-dependencies.php(137): WP_Scripts->do_item('jquery-core', 0)
+#4 /var/www/exp/catest/wp-includes/class-wp-scripts.php(750): WP_Dependencies->do_items(Array, 0)
+#5 /var/www/exp/catest/wp-includes/script-loader.php(2111): WP_Scripts->do_head_items()
+#6 /var/www/exp/catest/wp-includes/script-loader.php(2231): print_head_scripts()
+#7 /var/www/exp/catest/wp-includes/class-wp-hook.php(324): wp_print_head_scripts('')
+#8 /var/www/exp/catest/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(Array, Array)
+#9 /var/www/exp/catest/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#10 /var/www/exp/catest/wp-includes/general-template.php(3064): do_action('wp_head')
+#11 /var/www/exp/catest/wp-content/themes/thecareeracademy/header.php(8): wp_head()
+#12 /var/www/exp/catest/wp-includes/template.php(810): require_once('/var/www/exp/ca...')
+#13 /var/www/exp/catest/wp-includes/template.php(745): load_template('/var/www/exp/ca...', true, Array)
+#14 /var/www/exp/catest/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#15 /var/www/exp/catest/wp-content/themes/thecareeracademy/page.php(2): get_header()
+#16 /var/www/exp/catest/wp-includes/template-loader.php(106): include('/var/www/exp/ca...')
+#17 /var/www/exp/catest/wp-blog-header.php(19): require_once('/var/www/exp/ca...')
+#18 /var/www/exp/catest/index.php(17): require('/var/www/exp/ca...')
+#19 {main}
+  thrown in /var/www/exp/catest/wp-content/themes/thecareeracademy/functions.php on line 62
+[28-Nov-2024 23:04:24 UTC] PHP Deprecated:  Creation of dynamic property ftp::$features is deprecated in /var/www/exp/catest/wp-admin/includes/class-ftp.php on line 151
+[28-Nov-2024 23:05:41 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "setup_theme" not found or invalid function name in /var/www/exp/catest/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /var/www/exp/catest/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /var/www/exp/catest/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /var/www/exp/catest/wp-settings.php(682): do_action('after_setup_the...')
+#3 /var/www/exp/catest/wp-config.php(107): require_once('/var/www/exp/ca...')
+#4 /var/www/exp/catest/wp-load.php(50): require_once('/var/www/exp/ca...')
+#5 /var/www/exp/catest/wp-blog-header.php(13): require_once('/var/www/exp/ca...')
+#6 /var/www/exp/catest/index.php(17): require('/var/www/exp/ca...')
+#7 {main}
+  thrown in /var/www/exp/catest/wp-includes/class-wp-hook.php on line 324
+[28-Nov-2024 23:05:41 UTC] PHP Deprecated:  Creation of dynamic property ftp::$features is deprecated in /var/www/exp/catest/wp-admin/includes/class-ftp.php on line 151
+[28-Nov-2024 23:05:41 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "setup_theme" not found or invalid function name in /var/www/exp/catest/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /var/www/exp/catest/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /var/www/exp/catest/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /var/www/exp/catest/wp-settings.php(682): do_action('after_setup_the...')
+#3 /var/www/exp/catest/wp-config.php(107): require_once('/var/www/exp/ca...')
+#4 /var/www/exp/catest/wp-load.php(50): require_once('/var/www/exp/ca...')
+#5 /var/www/exp/catest/wp-blog-header.php(13): require_once('/var/www/exp/ca...')
+#6 /var/www/exp/catest/index.php(17): require('/var/www/exp/ca...')
+#7 {main}
+  thrown in /var/www/exp/catest/wp-includes/class-wp-hook.php on line 324
+[28-Nov-2024 23:05:41 UTC] PHP Deprecated:  Creation of dynamic property ftp::$features is deprecated in /var/www/exp/catest/wp-admin/includes/class-ftp.php on line 151
