@@ -1,6 +1,15 @@
 <?php
 
+define('FS_METHOD', 'direct');
+
 define('VITE_DEV', file_exists(__DIR__ . '/dev.flag'));
+
+// BEGIN Redis Object Cache
+define('WP_REDIS_HOST', 'redis');
+define('WP_REDIS_PASSWORD', 'secret_redis');
+define('WP_REDIS_PORT', 6379);
+define('WP_REDIS_CLIENT', 'phpredis');
+// END Redis Object Cache
 
 /**
  * The base configuration for WordPress
@@ -88,9 +97,9 @@ $table_prefix = 'wp_';
  *
  * @link https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
  */
-define('WP_DEBUG', false);
-define('WP_DEBUG_LOG', false);
-define('WP_DEBUG_DISPLAY', false);
+define('WP_DEBUG', true);
+define('WP_DEBUG_LOG', true);
+define('WP_DEBUG_DISPLAY', true);
 
 /* Add any custom values between this line and the "stop editing" line. */
 
