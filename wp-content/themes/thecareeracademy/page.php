@@ -3,7 +3,7 @@ get_header();
 ?>
 
 <main>
-	<div>this is A RAT race</div>
+	<div>Does Visudo work?</div>
 	<?php
 	while (have_posts()) :
 		the_post();
