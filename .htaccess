@@ -27,7 +27,7 @@ Header set Access-Control-Allow-Origin "*" env=IS_CORS
 </IfModule>
 
 # Allow access to web fonts from all domains.
-<FilesMatch "\.(eot|otf|tt[cf]|woff2?)$">
+<FilesMatch "\.(eot|otf|tt[cf]|js|woff2?)$">
 <IfModule mod_headers.c>
 Header set Access-Control-Allow-Origin "*"
 </IfModule>
@@ -137,17 +137,6 @@ Header append Vary: Accept-Encoding
 
 
 # END WP Rocket
-
-# BEGIN WP Rocket Fix
-<IfModule mod_headers.c>
-    # Allow CORS for JS files
-    <FilesMatch "\.(js)$">
-        Header set Access-Control-Allow-Origin "*"
-        Header set Access-Control-Allow-Methods "GET, OPTIONS"
-        Header set Access-Control-Allow-Headers "Origin, Content-Type, Accept"
-    </FilesMatch>
-</IfModule>
-# END WP Rocket Fix
 
 # BEGIN WordPress
 # The directives (lines) between "BEGIN WordPress" and "END WordPress" are
