@@ -3,7 +3,6 @@ get_header();
 ?>
 
 <main>
-	<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quae!</div>
 	<?php
 	while (have_posts()) :
 		the_post();
