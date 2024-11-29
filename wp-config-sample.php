@@ -2,7 +2,7 @@
 
 define('FS_METHOD', 'direct');
 
-define('VITE_DEV', file_exists(__DIR__ . '/dev.flag'));
+define('VITE_DEV', file_exists(__DIR__ . '/wp-content/themes/thecareeracademy/dev.flag'));
 
 // BEGIN Redis Object Cache
 define('WP_REDIS_HOST', 'redis');
@@ -11,7 +11,7 @@ define('WP_REDIS_PORT', 6379);
 define('WP_REDIS_CLIENT', 'phpredis');
 // END Redis Object Cache
 
-define( 'WP_CACHE', false );
+define('WP_CACHE', false);
 
 /**
  * The base configuration for WordPress
