@@ -4,4 +4,4 @@ window.Alpine = Alpine;
 
 Alpine.start();
 
-console.log('Hello World!');
+console.log('Hello World 2!');

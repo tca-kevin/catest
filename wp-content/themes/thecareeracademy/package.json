@@ -17,7 +17,7 @@
   "main": "index.js",
   "name": "thecareeracademy",
   "scripts": {
-    "build": "rm -f dev.flag vite build",
+    "build": "rm -f dev.flag && vite build",
     "dev": "touch dev.flag && vite"
   },
   "version": "1.0.0"
