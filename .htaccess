@@ -18,11 +18,6 @@ FileETag None
 # Send CORS headers if browsers request them; enabled by default for images.
 <IfModule mod_setenvif.c>
 <IfModule mod_headers.c>
-
-<FilesMatch "app\.js$">
-    Header set Access-Control-Allow-Origin "*"
-</FilesMatch>
-
 # mod_headers, y u no match by Content-Type?!
 <FilesMatch "\.(avifs?|cur|gif|png|jpe?g|svgz?|ico|webp)$">
 SetEnvIf Origin ":" IS_CORS
