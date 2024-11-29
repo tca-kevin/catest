@@ -3,6 +3,7 @@ get_header();
 ?>
 
 <main>
+	<div>this is a race</div>
 	<?php
 	while (have_posts()) :
 		the_post();
