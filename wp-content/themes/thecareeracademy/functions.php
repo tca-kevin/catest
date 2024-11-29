@@ -46,7 +46,7 @@ function manage_scripts_and_styles_in_head_tag()
 
 		wp_enqueue_style('hmr-style', "https://catest.test:5173/src/style.scss", array(), null);
 	} else {
-		wp_enqueue_script('theme-script', get_template_directory_uri() . '/app.js', array(), wp_get_theme()->get('Version'));
+		wp_enqueue_script('theme-script', get_template_directory_uri() . '/app.js', array());
 
 		wp_enqueue_style('theme-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
 	}
