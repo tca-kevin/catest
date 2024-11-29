@@ -3,7 +3,7 @@ get_header();
 ?>
 
 <main>
-	<div>this is not a race</div>
+	<div>this is A RAT race</div>
 	<?php
 	while (have_posts()) :
 		the_post();
