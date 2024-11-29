@@ -19,7 +19,7 @@ FileETag None
 <IfModule mod_setenvif.c>
 <IfModule mod_headers.c>
 # mod_headers, y u no match by Content-Type?!
-<FilesMatch "\.(avifs?|cur|gif|png|jpe?g|svgz?|ico|js|webp)$">
+<FilesMatch "\.(avifs?|cur|gif|png|jpe?g|svgz?|ico|webp)$">
 SetEnvIf Origin ":" IS_CORS
 Header set Access-Control-Allow-Origin "*" env=IS_CORS
 </FilesMatch>
