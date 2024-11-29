@@ -9,11 +9,11 @@ const commonConfig = {
 	build: {
 		rollupOptions: {
 			input: {
-				script: resolve(__dirname, './src/app.js'),
+				script: resolve(__dirname, './src/script.js'),
 				style: resolve(__dirname, './src/style.scss'),
 			},
 			output: {
-				entryFileNames: 'app.js',
+				entryFileNames: 'script.js',
 				assetFileNames: ({ names }) => {
 					if (names && names.some(name => name.endsWith('.css'))) {
 						return 'style.css';
