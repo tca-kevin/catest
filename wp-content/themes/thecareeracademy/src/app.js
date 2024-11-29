@@ -4,4 +4,4 @@ window.Alpine = Alpine;
 
 Alpine.start();
 
-console.log('Hello World Testo!');
+console.log('Hello World App!');
