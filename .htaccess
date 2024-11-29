@@ -19,7 +19,7 @@ FileETag None
 <IfModule mod_setenvif.c>
 <IfModule mod_headers.c>
 # mod_headers, y u no match by Content-Type?!
-<FilesMatch "\.(avifs?|cur|gif|png|jpe?g|svgz?|ico|webp|js)$">
+<FilesMatch "\.(avifs?|cur|gif|png|jpe?g|svgz?|ico|webp)$">
 SetEnvIf Origin ":" IS_CORS
 Header set Access-Control-Allow-Origin "*" env=IS_CORS
 </FilesMatch>
@@ -27,7 +27,7 @@ Header set Access-Control-Allow-Origin "*" env=IS_CORS
 </IfModule>
 
 # Allow access to web fonts from all domains.
-<FilesMatch "\.(eot|otf|tt[cf]|woff2?|js)$">
+<FilesMatch "\.(eot|otf|tt[cf]|woff2?)$">
 <IfModule mod_headers.c>
 Header set Access-Control-Allow-Origin "*"
 </IfModule>
