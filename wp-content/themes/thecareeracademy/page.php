@@ -3,7 +3,6 @@ get_header();
 ?>
 
 <main>
-	<div>test webhook #again</div>
 	<?php
 	while (have_posts()) :
 		the_post();
