@@ -3,7 +3,7 @@ get_header();
 ?>
 
 <main>
-	<div>Does Visudo work?</div>
+	<div>holy shit</div>
 	<?php
 	while (have_posts()) :
 		the_post();
