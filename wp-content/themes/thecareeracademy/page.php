@@ -3,7 +3,6 @@ get_header();
 ?>
 
 <main>
-	<div>holy shit</div>
 	<?php
 	while (have_posts()) :
 		the_post();
