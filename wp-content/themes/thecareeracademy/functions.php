@@ -33,11 +33,11 @@ function configure_theme()
 add_action('after_setup_theme', 'configure_theme');
 
 /**
- * Enqueue scripts and styles
+ * Manage scripts and styles in head tag
  *
  * @return void
  */
-function load_scripts_and_styles()
+function manage_scripts_and_styles_in_head_tag()
 {
 	if (defined('VITE_DEV') && VITE_DEV) {
 		echo '<script type="module" src="https://catest.test:5173/@vite/client"></script>';
@@ -50,9 +50,40 @@ function load_scripts_and_styles()
 
 		wp_enqueue_style('theme-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
 	}
+
+	if (!is_woocommerce()) {
+		wp_deregister_script('jquery'); // /wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js | /wp-includes/js/jquery/jquery.min.js | /wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js | /wp-includes/js/jquery/jquery-migrate.min.js
+
+		remove_action('wp_head', 'print_emoji_detection_script', 7); // /wp-includes/js/wp-emoji-release.min.js?
+
+		wp_dequeue_style('wp-block-library'); // /wp-includes/css/dist/block-library/style.min.css
+
+		wp_deregister_style('wc-blocks-style'); // /wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css
+
+		wp_dequeue_style('woocommerce-layout'); // /wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css
+
+		wp_dequeue_style('woocommerce-smallscreen'); // /wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css
+
+		wp_dequeue_style('woocommerce-general'); // /wp-content/plugins/woocommerce/assets/css/woocommerce.css
+	}
 }
 
-add_action('wp_enqueue_scripts', 'load_scripts_and_styles');
+add_action('wp_enqueue_scripts', 'manage_scripts_and_styles_in_head_tag');
+
+
+/**
+ * Manage scripts and styles in head tag
+ *
+ * @return void
+ */
+function manage_scripts_and_styles_in_body_tag()
+{
+	if (!is_woocommerce()) {
+		wp_deregister_script('sourcebuster-js'); // /wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js | /wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js
+	}
+}
+
+add_action('wp_enqueue_scripts', 'manage_scripts_and_styles_in_body_tag', 9999);
 
 /**
  * Edit script loader tag
