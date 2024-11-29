@@ -1,2 +1,12 @@
 /.history
 wp-config.php
+/wp-content/themes/thecareeracademy/node_modules
+/wp-content/themes/thecareeracademy/dist
+/wp-content/themes/thecareeracademy/.env
+/wp-content/debug.log
+/wp-content/uploads/wc-logs/*.log
+# BEGIN WP Rocket
+/wp-content/cache
+/wp-content/wp-rocket-config
+/wp-content/advanced-cache.php
+# END WP Rocket
