@@ -4,14 +4,14 @@ define('FS_METHOD', 'direct');
 
 define('VITE_DEV', file_exists(__DIR__ . '/dev.flag'));
 
-define( 'WP_CACHE', true );
-
 // BEGIN Redis Object Cache
 define('WP_REDIS_HOST', 'redis');
 define('WP_REDIS_PASSWORD', 'secret_redis');
 define('WP_REDIS_PORT', 6379);
 define('WP_REDIS_CLIENT', 'phpredis');
 // END Redis Object Cache
+
+define( 'WP_CACHE', false );
 
 /**
  * The base configuration for WordPress
