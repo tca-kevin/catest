@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-import debugScreens from 'tailwindcss-debug-screens';
-
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
@@ -176,6 +174,7 @@ module.exports = {
     },
   },
   plugins: [
-    debugScreens,
+    require('tailwindcss-debug-screens'),
+    require('tailwind-scrollbar'),
   ],
 }
