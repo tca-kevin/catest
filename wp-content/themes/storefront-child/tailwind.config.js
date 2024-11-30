@@ -4,7 +4,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   corePlugins: {
-    preflight: true,
+    preflight: false,
   },
   important: true,
   content: ["./src/**/*.{js,scss}", "./*.php",],
