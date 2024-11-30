@@ -9,7 +9,19 @@ add_action('after_setup_theme', function () {
 
 	register_nav_menus(
 		array(
-			'menu-1' => __('Primary', 'thecareeracademy'),
+			'header-menu' => __('Header Menu', 'thecareeracademy'),
+		)
+	);
+
+	register_nav_menus(
+		array(
+			'footer-menu' => __('Footer Menu', 'thecareeracademy'),
+		)
+	);
+
+	register_nav_menus(
+		array(
+			'mobile-menu' => __('Mobile Menu', 'thecareeracademy'),
 		)
 	);
 });
