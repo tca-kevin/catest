@@ -1,0 +1,123 @@
+/*!
+Theme Name:   The Career Academy
+Theme URI:    https://thecareeracademy.com/
+Author:       Kevin Lim
+Author URI:   https://kevinlim.dev/
+Description:  Storefront is the perfect theme for your next WooCommerce project. Designed and developed by WooCommerce Core developers, it features a bespoke integration with WooCommerce itself plus many of the most popular customer facing WooCommerce extensions. There are several layout & color options to personalise your shop, multiple widget regions, a responsive design and much more. Developers will love its lean and extensible codebase making it a joy to customize and extend. Looking for a WooCommerce theme? Look no further!
+Version:      1.0.0
+Tags:         silence is golden
+*/
+
+@font-face {
+    font-family: "Druk Wide";
+    src: url("../fonts/DrukWide-Medium.eot");
+    src:
+        url("../fonts/DrukWide-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/DrukWide-Medium.woff2") format("woff2"),
+        url("../fonts/DrukWide-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Druk Wide";
+    src: url("../fonts/DrukWide-MediumItalic.eot");
+    src:
+        url("../fonts/DrukWide-MediumItalic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/DrukWide-MediumItalic.woff2") format("woff2"),
+        url("../fonts/DrukWide-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Druk Wide";
+    src: url("../fonts/DrukWide-Bold.eot");
+    src:
+        url("../fonts/DrukWide-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/DrukWide-Bold.woff2") format("woff2"),
+        url("../fonts/DrukWide-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Druk Wide";
+    src: url("../fonts/DrukWide-BoldItalic.eot");
+    src:
+        url("../fonts/DrukWide-BoldItalic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/DrukWide-BoldItalic.woff2") format("woff2"),
+        url("../fonts/DrukWide-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Druk Wide";
+    src: url("../fonts/DrukWide-Heavy.eot");
+    src:
+        url("../fonts/DrukWide-Heavy.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/DrukWide-Heavy.woff2") format("woff2"),
+        url("../fonts/DrukWide-Heavy.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Druk Wide";
+    src: url("../fonts/DrukWide-HeavyItalic.eot");
+    src:
+        url("../fonts/DrukWide-HeavyItalic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/DrukWide-HeavyItalic.woff2") format("woff2"),
+        url("../fonts/DrukWide-HeavyItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@import url("https://use.typekit.net/phd3vdh.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .font-sans,
+    .font-serif,
+    .font-mono {
+        letter-spacing: 0.0625rem;
+    }
+
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply touch-manipulation;
+    }
+
+    [x-cloak] {
+        @apply hidden;
+    }
+
+    ::-webkit-scrollbar {
+        @apply w-4;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-sky-500 rounded-sm;
+
+        &:hover {
+            @apply bg-orange-400 cursor-grab;
+        }
+    }
+}
