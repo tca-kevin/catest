@@ -6,20 +6,36 @@ import dotenv from "dotenv";
 const env = dotenv.config().parsed;
 
 const commonConfig = {
+	base: './',
 	build: {
 		rollupOptions: {
 			input: {
-				script: resolve(__dirname, './src/app.js'),
-				style: resolve(__dirname, './src/style.scss'),
+				'dist/assets/js/app': resolve(__dirname, 'src/js/app.js'),
+				'dist/assets/js/style': resolve(__dirname, 'src/js/style.js'),
+				'style': resolve(__dirname, 'src/sass/style.scss'),
+				'app': resolve(__dirname, 'src/sass/app.scss'),
 			},
 			output: {
-				entryFileNames: 'app.js',
-				assetFileNames: ({ names }) => {
-					if (names && names.some(name => name.endsWith('.css'))) {
-						return 'style.css';
+				entryFileNames: () => {
+					return '[name].js';
+				},
+				chunkFileNames: () => {
+					return '[name].js';
+				},
+				assetFileNames: (assetInfo) => {
+					if (assetInfo.name === 'style.css') {
+						return '[name][extname]';
 					}
 
-					return '[name].[ext]';
+					if (assetInfo.name.endsWith('.css')) {
+						return 'dist/assets/css/[name][extname]';
+					}
+
+					if (/\.(eot|woff|woff2)$/.test(assetInfo.name)) {
+						return 'dist/assets/fonts/[name][extname]';
+					}
+
+					return 'dist/[name][extname]';
 				},
 				dir: resolve(__dirname, '.'),
 			},

@@ -15,11 +15,11 @@ add_action('after_setup_theme', function () {
 add_action('wp_enqueue_scripts', function () {
 	if (defined('VITE_DEV') && VITE_DEV) {
 		echo '<script type="module" src="https://catest.test:5173/@vite/client"></script>';
-		wp_enqueue_script('hmr-script', "https://catest.test:5173/src/app.js", array(), null);
-		wp_enqueue_style('hmr-style', "https://catest.test:5173/src/style.scss", array(), null);
+		wp_enqueue_script('src-js-app', "https://catest.test:5173/src/js/app.js", array(), null);
+		wp_enqueue_style('src-sass-style', "https://catest.test:5173/src/sass/style.scss", array(), null);
 	} else {
-		wp_enqueue_script('theme-script', get_template_directory_uri() . '/app.js', array(), wp_get_theme()->get('Version'));
-		wp_enqueue_style('theme-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
+		wp_enqueue_script('dist-assets-js-app', get_template_directory_uri() . '/dist/assets/js/app.js', array(), wp_get_theme()->get('Version'));
+		wp_enqueue_style('style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
 	}
 
 	if (!is_woocommerce()) {
@@ -60,7 +60,7 @@ add_filter('body_class', function ($classes) {
 add_filter(
 	'script_loader_tag',
 	function ($tag, $handle, $src) {
-		if (($handle === 'theme-script') || ($handle === 'hmr-script')) {
+		if (($handle === 'src-js-app') || ($handle === 'dist-assets-js-app')) {
 			$tag = '<script type="module" src="' . $src . '"></script>';
 		}
 		return $tag;
