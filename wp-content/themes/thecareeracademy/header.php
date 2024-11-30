@@ -11,7 +11,7 @@
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
 	<header class="container mx-auto px-4">
-		<a href="<?php home_url(); ?>">
+		<a href="<?php echo home_url(); ?>">
 			<svg class="w-52" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1190.55 554.68">
 				<g>
 					<polygon points="512.01 203.1 534.03 203.1 534.03 133.19 564.31 133.19 564.31 115.72 481.73 115.72 481.73 133.19 512.01 133.19 512.01 203.1"></polygon>
