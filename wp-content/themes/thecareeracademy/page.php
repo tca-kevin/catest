@@ -19,6 +19,19 @@ get_header();
 			</div>
 			<hr class="my-4">
 			<div class="flex">
+				<div class="w-40 h-40 bg-stone-50"></div>
+				<div class="w-40 h-40 bg-stone-100"></div>
+				<div class="w-40 h-40 bg-stone-200"></div>
+				<div class="w-40 h-40 bg-stone-300"></div>
+				<div class="w-40 h-40 bg-stone-400"></div>
+				<div class="w-40 h-40 bg-stone-500"></div>
+				<div class="w-40 h-40 bg-stone-600"></div>
+				<div class="w-40 h-40 bg-stone-700"></div>
+				<div class="w-40 h-40 bg-stone-800"></div>
+				<div class="w-40 h-40 bg-stone-900"></div>
+			</div>
+			<hr class="my-4">
+			<div class="flex">
 				<div class="w-40 h-40 bg-red-50"></div>
 				<div class="w-40 h-40 bg-red-100"></div>
 				<div class="w-40 h-40 bg-red-200"></div>
@@ -107,6 +120,19 @@ get_header();
 				<div class="w-40 h-40 bg-teal-700"></div>
 				<div class="w-40 h-40 bg-teal-800"></div>
 				<div class="w-40 h-40 bg-teal-900"></div>
+			</div>
+			<hr class="my-4">
+			<div class="flex">
+				<div class="w-40 h-40 bg-sky-50"></div>
+				<div class="w-40 h-40 bg-sky-100"></div>
+				<div class="w-40 h-40 bg-sky-200"></div>
+				<div class="w-40 h-40 bg-sky-300"></div>
+				<div class="w-40 h-40 bg-sky-400"></div>
+				<div class="w-40 h-40 bg-sky-500"></div>
+				<div class="w-40 h-40 bg-sky-600"></div>
+				<div class="w-40 h-40 bg-sky-700"></div>
+				<div class="w-40 h-40 bg-sky-800"></div>
+				<div class="w-40 h-40 bg-sky-900"></div>
 			</div>
 			<hr class="my-4">
 			<div class="flex">
