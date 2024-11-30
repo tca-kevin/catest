@@ -2,9 +2,14 @@
 
 add_action('after_setup_theme', function () {
 	// add_theme_support('woocommerce'); // Storefront Child experiment
+
 	load_theme_textdomain('thecareeracademy', get_template_directory() . '/languages');
 	add_theme_support('title-tag');
 	add_theme_support('post-thumbnails');
+
+	register_nav_menus(array('header-menu' => __('Header Menu', 'thecareeracademy'),));
+	register_nav_menus(array('footer-menu' => __('Footer Menu', 'thecareeracademy'),));
+	register_nav_menus(array('mobile-menu' => __('Mobile Menu', 'thecareeracademy'),));
 });
 
 add_action('wp_enqueue_scripts', function () {
