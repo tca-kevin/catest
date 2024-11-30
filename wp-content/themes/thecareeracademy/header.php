@@ -9,7 +9,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('debug-screens'); ?>>
 	<?php wp_body_open(); ?>
 	<header class="container mx-auto px-4">
 		<a href="<?php home_url(); ?>">

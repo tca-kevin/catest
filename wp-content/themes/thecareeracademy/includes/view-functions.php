@@ -7,7 +7,7 @@ add_action('after_setup_theme', function () {
 
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__('Primary', 'thecareeracademy'),
+			'menu-1' => __('Primary', 'thecareeracademy'),
 		)
 	);
 });
@@ -60,8 +60,8 @@ add_filter('body_class', function ($classes) {
 add_filter(
 	'script_loader_tag',
 	function ($tag, $handle, $src) {
-		if ('theme-script' === $handle) {
-			$tag = '<script type="module" src="' . esc_url($src) . '"></script>';
+		if (($handle === 'theme-script') || ($handle === 'hmr-script')) {
+			$tag = '<script type="module" src="' . $src . '"></script>';
 		}
 		return $tag;
 	},
