@@ -1,6 +1,7 @@
 /.history
 wp-config.php
 /wp-content/themes/thecareeracademy/node_modules
+/wp-content/themes/thecareeracademy/vendor
 /wp-content/themes/thecareeracademy/.env
 /wp-content/debug.log
 /wp-content/uploads/wc-logs/*.log
