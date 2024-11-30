@@ -32,6 +32,20 @@ module.exports = {
           900: "#24333D",
           950: "#11181D"
         },
+        "stone": {
+          DEFAULT: "#5B5A58",
+          50: "#F0F0EF",
+          100: "#DEDEDD",
+          200: "#BEBDBC",
+          300: "#9D9C9A",
+          400: "#7C7B78",
+          500: "#5B5A58",
+          600: "#494846",
+          700: "#363635",
+          800: "#242423",
+          900: "#121212",
+          950: "#0A0A0A"
+        },
         "red": {
           DEFAULT: "#E40634",
           50: "#FEE6EB",
@@ -52,7 +66,7 @@ module.exports = {
           100: "#FFDFD6",
           200: "#FFBFAD",
           300: "#FF8379", // #FFA38A replaced with TCA Hospo 1
-          400: "#FF8361",
+          400: "#FE791A", // #FF8361 TCA Classic Orange
           500: "#FF6238", // TCA Orange, TCA Hospo 2, TCA Operations 2
           600: "#FA3600",
           700: "#BD2900",
@@ -129,6 +143,20 @@ module.exports = {
           800: "#004D45",
           900: "#002420",
           950: "#001412"
+        },
+        "sky": {
+          DEFAULT: "#379BBB",
+          50: "#EBF6F9",
+          100: "#D8ECF3",
+          200: "#ACD8E7",
+          300: "#85C5DB",
+          400: "#5AB1CE",
+          500: "#379BBB",
+          600: "#2C7B96",
+          700: "#225E72",
+          800: "#163E4B",
+          900: "#0C2027",
+          950: "#061014"
         },
         "blue": {
           DEFAULT: "#0081AA",
