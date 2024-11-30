@@ -19,7 +19,7 @@ add_action('wp_enqueue_scripts', function () {
 		wp_enqueue_style('style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
 	}
 
-	if (!is_woocommerce()) {
+	if (is_front_page()) {
 		wp_deregister_script('jquery'); // /wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js | /wp-includes/js/jquery/jquery.min.js | /wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js | /wp-includes/js/jquery/jquery-migrate.min.js
 		wp_dequeue_style('wp-block-library'); // /wp-includes/css/dist/block-library/style.min.css
 		wp_deregister_style('wc-blocks-style'); // /wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css
@@ -27,17 +27,21 @@ add_action('wp_enqueue_scripts', function () {
 		wp_dequeue_style('woocommerce-smallscreen'); // /wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css
 		wp_dequeue_style('woocommerce-general'); // /wp-content/plugins/woocommerce/assets/css/woocommerce.css
 		wp_dequeue_style('woocommerce-inline'); // id='woocommerce-inline-inline-css'
+		wp_dequeue_style('wp-block-library-theme'); // id='wp-block-library-theme-inline-css'
+		wp_dequeue_style('storefront-gutenberg-blocks'); // id='storefront-gutenberg-blocks-inline-css'
+		add_filter('storefront_customizer_css', '__return_false'); // id='storefront-style-inline-css'
+		add_filter('storefront_customizer_woocommerce_css', '__return_false'); // id='storefront-woocommerce-style-inline-css'
 	}
 });
 
 add_action('wp_enqueue_scripts', function () {
-	if (!is_woocommerce()) {
+	if (is_front_page()) {
 		wp_deregister_script('sourcebuster-js'); // /wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js | /wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js
 	}
 }, 9999);
 
-add_action('init', function () {
-	if (!is_woocommerce()) {
+add_action('template_redirect', function () {
+	if (is_front_page()) {
 		remove_action('wp_head', 'wp_print_auto_sizes_contain_css_fix', 1); // img:is([sizes="auto" i], [sizes^="auto," i])
 		remove_action('wp_head', 'print_emoji_detection_script', 7); // <![CDATA[]]> | /wp-includes/js/wp-emoji-release.min.js?
 		remove_action('wp_print_styles', 'print_emoji_styles'); // id='wp-emoji-styles-inline-css'
@@ -49,7 +53,9 @@ add_action('init', function () {
 });
 
 add_filter('body_class', function ($classes) {
-	remove_action('wp_footer', 'wc_no_js');
+	if (is_front_page()) {
+		remove_action('wp_footer', 'wc_no_js'); // type="application/ld+json"
+	}
 
 	return $classes;
 });
