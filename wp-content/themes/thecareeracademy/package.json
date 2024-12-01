@@ -1,0 +1,27 @@
+{
+  "author": "",
+  "description": "",
+  "devDependencies": {
+    "alpinejs": "^3.14.5",
+    "autoprefixer": "^10.4.20",
+    "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "postcss": "^8.4.49",
+    "sass": "^1.81.0",
+    "tailwind-scrollbar": "^3.1.0",
+    "tailwindcss": "^3.4.15",
+    "tailwindcss-debug-screens": "^2.2.1",
+    "vite": "^6.0.1"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "thecareeracademy",
+  "scripts": {
+    "build": "rm -f dev.flag && vite build",
+    "dev": "touch dev.flag && vite",
+    "watch": "touch dev.flag && vite"
+  },
+  "version": "1.0.0"
+}
