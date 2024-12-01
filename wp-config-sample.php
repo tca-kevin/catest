@@ -11,7 +11,7 @@ define('WP_REDIS_PORT', 6379);
 define('WP_REDIS_CLIENT', 'phpredis');
 // END Redis Object Cache
 
-define('WP_CACHE', false);
+define('WP_CACHE', true);
 
 /**
  * The base configuration for WordPress
