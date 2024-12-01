@@ -50,9 +50,6 @@ function menu_find_parent($menu_array, $menu_parent_id, $menu_current_item, $men
 $menu_items = wp_get_nav_menu_items(get_nav_menu_locations()['header-menu']);
 
 $menu_array = menu_build_array($menu_items);
-
-dd($menu_array);
-
 ?>
 
 <!doctype html>
