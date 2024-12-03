@@ -96,6 +96,11 @@ Header append Cache-Control "public"
 	ExpiresByType text/css                      "access plus 1 year"
 	ExpiresByType application/javascript        "access plus 1 year"
 </IfModule>
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js|css|jpg|jpeg|png|gif|svg|woff|woff2|ttf|eot|ico)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+</IfModule>
 # Gzip compression
 <IfModule mod_deflate.c>
 # Active compression
