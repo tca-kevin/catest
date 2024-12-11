@@ -1,9 +1,10 @@
 <?php
 
+define('WP_COUNTRY', 'NZ');
+
 define('FS_METHOD', 'direct');
 
 define('VITE_PORT', 5173);
-define('VITE_DEV', file_exists(__DIR__ . '/wp-content/themes/thecareeracademy/dev.flag'));
 
 // BEGIN Redis Object Cache
 define('WP_REDIS_HOST', 'redis');
